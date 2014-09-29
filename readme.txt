@@ -34,8 +34,9 @@ To install the project:
     1. Clone de repo
     2. Create a virtualenv and type:  pip install requirements.pip
     3. Edit the importer.php and update the path in it
-    4. ru
-
+    4. Run the importer   python importer.py
+    5. Start the server python manage.py runserver
+    6. Point your browser to localhost:8000/mysite
 
 
 
