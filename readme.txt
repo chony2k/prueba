@@ -4,7 +4,7 @@ It contains the following links
 
 	 - A view/URL that accept a date and return the matching phrases.
 
-		This view is rather simple, it renders a form with two fields, day and month, on submition, the filter is applied by using Django's ObjectSet 
+		This view is rather simple, it renders a form with two fields, day and month, on submittion, the filter is applied by using Django's QuerySet
 		features.
 
 	- A view or Python script to import the CSV content into the database.
