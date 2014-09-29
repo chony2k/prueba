@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome</h1>
+        <p>
+        <pre>
+    A Django application:
+
+	1.1 A view/URL that accept a date and return the matching phrases.
+	1.2 A view or Python script to import the CSV content into the database.
+	1.3 A view to calculate the the total number of words in the phrases.
+	1.4 Incorporate Django-tagging into the app: https://github.com/alex/django-taggit
+	1.5 A view that using phrases as a list two elements secuences of strings, detects which elements
+        are string's rotation (non case sensitive). Ex:
+		The phrase:
+			"Stackoverflow tackoverflows there a view that using ngusi as a sentence"
+		Transforms to:
+			[(Stackoverflow, tackoverflows), (there, a), (view, that), (using, ngusi), (as, a), (sentence,)]
+		Are rotations:
+			(Stackoverflow, tackoverflows)
+			(using, ngusi)
+        </pre>
+
+        </p>
+
+{% endblock %}

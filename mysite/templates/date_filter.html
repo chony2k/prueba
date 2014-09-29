@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Filter phrases by month and day</h1>
+    <p>Enter a month and a day to filter by:</p>
+    <form action="/mysite/phrases_per_date" method="get">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit"/>
+    </form>
+    <ul>
+        {% for p in matching_phrases %}
+            <li>{{ p.title }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

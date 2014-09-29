@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}
+    Word count per phrase
+{% endblock %}
+{% block content %}
+    <h1>Word count per phrase</h1>
+    {% for p in phrases %}
+        <li>{{ p.title }} : {{ p.body|wordcount }}</li>
+    {% endfor %}
+{% endblock %}
