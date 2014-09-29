@@ -16,5 +16,6 @@ class Phrase(models.Model):
     def __unicode__(self):
         return self.title
 
+
     class Meta:
         app_label = 'mysite'

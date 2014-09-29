@@ -85,6 +85,8 @@ def rotations(request):
     for p in phrases:
         words = p.body.split(' ')
 
+        words = [w.encode("utf8") for w in words]
+
         # Split into subsets of two
         t = [words[n:n + 2] for n, i in enumerate(words) if n % 2 == 0]
 
@@ -92,5 +94,6 @@ def rotations(request):
         for subset in t:
             if len(subset) == 2 and is_rotation(subset[0], subset[1]):
                 rotations.append(subset)
+
 
     return render(request, 'rotations.html', {'rotations': rotations})
