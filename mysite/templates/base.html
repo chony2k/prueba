@@ -1,12 +1,43 @@
-{% load sekizai_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Lynxoft{% endblock title %}</title>
-    {% render_block "css" %}
+    <title>{% block title %}Lynxoft test{% endblock title %}</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        #container,  #menu{
+            width: 940px;
+            margin: 40px auto;
+            padding-left: 30px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #menu {
+            padding-top: 5px;
+            padding-left: 3px;
+            height: 60px;
+        }
+
+        ul.navigation li {
+            float: left;
+            margin-right: 50px;
+        }
+    </style>
 </head>
 <body>
-<div style="width: 940px; margin:0 auto">
+<div id="menu">
+    <ul class="navigation">
+            <li><a href="/mysite/">Home</a></li>
+            <li><a href="/mysite/phrases_per_date">Phrases per date</a></li>
+            <li><a href="/mysite/wordcount">Word count per phrase</a></li>
+            <li><a href="/mysite/rotations">Rotations in the phrases</a></li>
+    </ul>
+</div>
+<div id="container">
     {% block content %}
     {% endblock content %}
 </div>
