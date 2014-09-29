@@ -10,7 +10,9 @@ It contains the following links
 	- A view or Python script to import the CSV content into the database.
 
 	    A python script was created to do this. It leverages the CSV library, which speed up the process of splitting lines into discrete values.
-	    To run the script, open a shell console in the root of the prohject and type python importer.py
+	    To run the script, open a shell console in the root of the prohject and type python importer.py  
+
+	    Before running the script, edit it and update the path to your project.
 
 
 	- A view to calculate the the total number of words in the phrases.
@@ -28,6 +30,8 @@ It contains the following links
 
 
 To install the project, create a virtualenv and type:  pip install requirements.pip
+
+
 
 
 

@@ -1,14 +1,14 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>{% block title %}Lynxoft test{% endblock title %}</title>
+
     <style>
         body {
             background-color: lightgrey;
         }
 
-        #container,  #menu{
+        #container, #menu {
             width: 940px;
             margin: 40px auto;
             padding-left: 30px;
@@ -18,8 +18,8 @@
 
         #menu {
             padding-top: 5px;
-            padding-left: 3px;
-            height: 60px;
+            padding-left: 30px;
+            height: 120px;
         }
 
         ul.navigation li {
@@ -30,11 +30,12 @@
 </head>
 <body>
 <div id="menu">
+    <h2>Lynxoft</h2>
     <ul class="navigation">
-            <li><a href="/mysite/">Home</a></li>
-            <li><a href="/mysite/phrases_per_date">Phrases per date</a></li>
-            <li><a href="/mysite/wordcount">Word count per phrase</a></li>
-            <li><a href="/mysite/rotations">Rotations in the phrases</a></li>
+        <li><a href="/mysite/">Home</a></li>
+        <li><a href="/mysite/phrases_per_date">Phrases per date</a></li>
+        <li><a href="/mysite/wordcount">Word count per phrase</a></li>
+        <li><a href="/mysite/rotations">Rotations in the phrases</a></li>
     </ul>
 </div>
 <div id="container">

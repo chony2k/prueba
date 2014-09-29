@@ -1,6 +1,8 @@
 import sys,os
 
+# Replace with the path to your project
 sys.path.extend(['/Users/manuel/Development/prueba/'])
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
 from mysite.models import Phrase
