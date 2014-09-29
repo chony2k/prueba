@@ -31,22 +31,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
-
-
-
 ROOT_URLCONF = 'mysite.urls'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'en'
 
@@ -87,10 +75,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.doc.XViewMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -104,7 +88,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'sekizai.context_processors.sekizai',
     'django.core.context_processors.static',
-    'cms.context_processors.cms_settings'
 )
 
 TEMPLATE_DIRS = (
@@ -112,8 +95,6 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'djangocms_admin_style',
-    'djangocms_text_ckeditor',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -122,21 +103,9 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
-    'cms',
     'mptt',
-    'menus',
     'south',
     'sekizai',
-    'djangocms_style',
-    'djangocms_column',
-    'djangocms_file',
-    'djangocms_flash',
-    'djangocms_googlemap',
-    'djangocms_inherit',
-    'djangocms_link',
-    'djangocms_picture',
-    'djangocms_teaser',
-    'djangocms_video',
     'reversion',
     'taggit',
     'mysite'
@@ -148,41 +117,6 @@ LANGUAGES = (
     ('es', gettext('es')),
 )
 
-CMS_LANGUAGES = {
-    ## Customize this
-    'default': {
-        'public': True,
-        'hide_untranslated': False,
-        'redirect_on_fallback': True,
-    },
-    1: [
-        {
-            'public': True,
-            'code': 'en',
-            'hide_untranslated': False,
-            'name': gettext('en'),
-            'redirect_on_fallback': True,
-        },
-        {
-            'public': True,
-            'code': 'es',
-            'hide_untranslated': False,
-            'name': gettext('es'),
-            'redirect_on_fallback': True,
-        },
-    ],
-}
-
-CMS_TEMPLATES = (
-    ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
-)
-
-CMS_PERMISSION = True
-
-CMS_PLACEHOLDER_CONF = {}
 
 DATABASES = {
     'default':

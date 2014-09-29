@@ -7,6 +7,7 @@ class Phrase(models.Model):
     month = models.IntegerField(default=15, help_text="Phrase month")
     day = models.IntegerField(default=15, help_text="Phrase day")
     body = models.TextField(blank=True, help_text="Phrase body")
+
     tags = TaggableManager()
 
     def __unicode__(self):
