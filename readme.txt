@@ -17,7 +17,9 @@ It contains the following links
 
 	- A view to calculate the the total number of words in the phrases.
 
-	   For this requirement, it was assumed that it meat total words PER phrase, so a list of phrases is displayed with the corresponding title and word count. The word count is calculted by splitting the phrase body into words and then calling len() in the resulting list.
+	   For this requirement, it was assumed that it meat total words PER phrase, so a list of phrases is
+	   displayed with the corresponding title and word count. The word count is calculated by splitting the
+	   phrase body into words and then calling len() in the resulting list.
 
 	- Incorporate Django-tagging into the app: https://github.com/alex/django-taggit
 
@@ -32,7 +34,7 @@ It contains the following links
 To install the project:
 
     1. Clone de repo
-    2. Create a virtualenv and type:  pip install requirements.pip
+    2. Create a virtualenv and type:  pip install -r requirements.pip
     3. Edit the importer.php and update the path in it
     4. Run the importer   python importer.py
     5. Start the server python manage.py runserver

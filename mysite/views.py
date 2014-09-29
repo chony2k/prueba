@@ -93,7 +93,8 @@ def rotations(request):
         # check for rotations
         for subset in t:
             if len(subset) == 2 and is_rotation(subset[0], subset[1]):
-                rotations.append(subset)
+                if rotations.__contains__(subset) == False:
+                    rotations.append(subset)
 
 
     return render(request, 'rotations.html', {'rotations': rotations})
