@@ -85,9 +85,6 @@ def rotations(request):
     for p in phrases:
         words = p.body.split(' ')
 
-        for w in words:
-            w
-
         # Split into subsets of two
         t = [words[n:n + 2] for n, i in enumerate(words) if n % 2 == 0]
 

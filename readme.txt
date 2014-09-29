@@ -29,7 +29,14 @@ It contains the following links
 	  The view works by firstly separating each phrase body into subsets of two, then applying a is_rotation function to come up witht he phrases that match the condition.
 
 
-To install the project, create a virtualenv and type:  pip install requirements.pip
+To install the project:
+
+    1. Clone de repo
+    2. Create a virtualenv and type:  pip install requirements.pip
+    3. Edit the importer.php and update the path in it
+    4. ru
+
+
 
 
 
