@@ -1,4 +1,5 @@
 import os
+
 gettext = lambda s: s
 """
 Django settings for mysite project.
@@ -12,6 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -34,7 +36,6 @@ ALLOWED_HOSTS = []
 ROOT_URLCONF = 'mysite.urls'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
-
 
 LANGUAGE_CODE = 'en'
 
@@ -116,7 +117,6 @@ LANGUAGES = (
     ('en', gettext('en')),
     ('es', gettext('es')),
 )
-
 
 DATABASES = {
     'default':

@@ -28,7 +28,10 @@ It contains the following links
 
 	- A view that using phrases as a list two elements secuences of strings, detects which elements are string's rotation 
 
-	  The view works by firstly separating each phrase body into subsets of two, then applying a is_rotation function to come up witht he phrases that match the condition.
+	  The view works by firstly separating each phrase body into subsets of two, then applying a is_rotation function
+	  to come up with he phrases that match the condition.
+
+	  Notice that if two words are the same, we assume that one is a valid rotation of the other.
 
 
 To install the project:

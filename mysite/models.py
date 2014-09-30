@@ -2,6 +2,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
 
+
 class Phrase(models.Model):
     """
     The Phrase model. The class is adding to django admin tool to allow basic CRUD operations.

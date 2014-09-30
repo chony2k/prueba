@@ -2,7 +2,15 @@
 {% block content %}
     <h2>Rotations</h2>
     <p>The following rotations were found:</p>
-    {% for r in rotations %}
-        <li>{{ r }}</li>
-    {% endfor %}
+    <div id="rotations">
+        {% for r in rotations %}
+            <li>{{ r }}</li>
+        {% endfor %}
+    </div>
+    <p>Two-word sequences per phrase:</p>
+    <div id="processed-phrases">
+        {% for t in processed_phrases %}
+            <li>{{ t }}</li>
+        {% endfor %}
+    </div>
 {% endblock %}

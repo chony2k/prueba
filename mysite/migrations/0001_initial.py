@@ -6,7 +6,6 @@ from django.db import models
 
 
 class Migration(SchemaMigration):
-
     def forwards(self, orm):
         # Adding model 'Phrase'
         db.create_table(u'mysite_phrase', (

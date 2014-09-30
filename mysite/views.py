@@ -81,6 +81,7 @@ def rotations(request):
         return False
 
     rotations = []
+    processed_phrases = []
 
     for p in phrases:
         words = p.body.split(' ')
@@ -89,6 +90,7 @@ def rotations(request):
 
         # Split into subsets of two
         t = [words[n:n + 2] for n, i in enumerate(words) if n % 2 == 0]
+        processed_phrases += [t]
 
         # check for rotations
         for subset in t:
@@ -96,5 +98,4 @@ def rotations(request):
                 if rotations.__contains__(subset) == False:
                     rotations.append(subset)
 
-
-    return render(request, 'rotations.html', {'rotations': rotations})
+    return render(request, 'rotations.html', {'rotations': rotations, 'processed_phrases': processed_phrases})
