@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Filter phrases by month and day</h1>
+    <h2>Filter phrases by month and day</h2>
     <p>Enter a month and a day to filter by:</p>
     <form action="/mysite/phrases_per_date" method="get">
         {% csrf_token %}
