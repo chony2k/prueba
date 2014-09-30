@@ -5,6 +5,6 @@
 {% block content %}
     <h2>Word count per phrase</h2>
     {% for p in phrases %}
-        <li>{{ p.title }} : <strong>{{ p.body|wordcount }}</strong></li>
+        <li>{{ p.title }} : <strong>{{ p.body|wordcount }}</strong> words</li>
     {% endfor %}
 {% endblock %}
