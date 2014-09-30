@@ -38,10 +38,11 @@ To install the project:
 
     1. Clone de repo
     2. Create a virtualenv and type:  pip install -r requirements.pip
-    3. Edit the importer.php and update the path in it
-    4. Run the importer   python importer.py
-    5. Start the server python manage.py runserver
-    6. Point your browser to localhost:8000/mysite
+    3. Run syncdb and migrate so that tables are created
+    4. Edit the importer.php and update the path in it to match your system's characteristics
+    5. Run the importer: python importer.py
+    6. Start the server: python manage.py runserver
+    7. Point your browser to localhost:8000/mysite
 
 
 
